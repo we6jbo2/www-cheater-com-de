@@ -99,11 +99,12 @@ namespace www_cheater_com_de
         string valueName = "Date";
 if (Microsoft.Win32.Registry.GetValue(keyName, valueName, null) == null)
 {
-     //code if key Not Exist
+                Application.Run(new Forms.logip());
+                //code if key Not Exist
 
-        //public void SetNewDate()
-        //{
-            DateTime newDate = DateTime.Now.AddDays(31);
+                //public void SetNewDate()
+                //{
+                DateTime newDate = DateTime.Now.AddDays(31);
         temp = newDate.ToLongDateString();
             string value = temp;
 try
